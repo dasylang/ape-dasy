@@ -6,7 +6,7 @@ authors = ["z80 <z80@ophy.xyz>"]
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.11"
-dasy = "0.1.17"
+dasy = "0.1.18"
 eth-ape = "^0.5.1"
 
 [tool.poetry.dev-dependencies]

@@ -1,0 +1,7 @@
+#+title: Ape-Dasy
+
+An [[https://apeworx.io][ape]] plugin for [[https://github.com/dasylang/dasy][dasy]]
+* Installation
+From any ape project directory, run =pip install ape-dasy=
+
+now, you can place any Dasy contracts into your contracts directory and run =ape compile=

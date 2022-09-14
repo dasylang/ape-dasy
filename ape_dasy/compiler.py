@@ -18,12 +18,13 @@ class DasyCompiler(CompilerAPI):
             for path in contracts_filepaths:
                 with open(os.path.join(base_path, path)) as f:
                     src = f.read()
-                    data = dasy.compile(src).__dict__
-                    data["contractName"] = Path(path).stem
-                    data["sourceId"] = path
-                    data["deploymentBytecode"] = {"bytecode": data["bytecode"]}
-                    data["runtimeBytecode"] = {"bytecode": data["bytecode_runtime"]}
-                    contract_types.append(ContractType.parse_obj(data))
+                    data = dasy.compile(src)
+                    data_dict = data.__dict__
+                    data_dict["contractName"] = Path(path).stem
+                    data_dict["sourceId"] = str(path)
+                    data_dict["deploymentBytecode"] = {"bytecode": '0x' + data.bytecode.hex()}
+                    data_dict["runtimeBytecode"] = {"bytecode": '0x' + data.bytecode_runtime.hex()}
+                    contract_types.append(ContractType.parse_obj(data_dict))
         return contract_types
 
     def get_compiler_settings(

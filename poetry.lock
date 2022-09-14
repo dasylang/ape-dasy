@@ -189,7 +189,7 @@ cython = ["cython"]
 
 [[package]]
 name = "dasy"
-version = "0.1.17"
+version = "0.1.18"
 description = ""
 category = "main"
 optional = false
@@ -1568,7 +1568,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10, <3.11"
-content-hash = "4100b3d3edd644bff527c23b2d32dfd784d5eca0878cdef9f4cd1ec51f22e634"
+content-hash = "4ce309a5d180b04645326b94c8914aaa740f76a35b5234a02eede4e7cabfa051"
 
 [metadata.files]
 aiohttp = [
@@ -1858,8 +1858,8 @@ cytoolz = [
     {file = "cytoolz-0.12.0.tar.gz", hash = "sha256:c105b05f85e03fbcd60244375968e62e44fe798c15a3531c922d531018d22412"},
 ]
 dasy = [
-    {file = "dasy-0.1.17-py3-none-any.whl", hash = "sha256:d2711f3fdf288b54fb3d59eb8aa41791395548fab94a17c292bd6af4a4ec6e2d"},
-    {file = "dasy-0.1.17.tar.gz", hash = "sha256:ec09d87ee9b3437dad818839512e693c34d5be1508fa4d20be83c23334199a95"},
+    {file = "dasy-0.1.18-py3-none-any.whl", hash = "sha256:e1e7eddb005d6a0c1dc5abccee7188998661eb0514a28094a86677af2e15398e"},
+    {file = "dasy-0.1.18.tar.gz", hash = "sha256:78a56354188ccf26d460845b9d142c0483adb37bd4701433a0449edf686eda78"},
 ]
 dasy-hy = [
     {file = "dasy-hy-0.24.1.tar.gz", hash = "sha256:656fa87f9b4f2738480c39f6a703d3777c337285bbaac8e9ced92db968534138"},
