@@ -7,6 +7,11 @@ from ape.types import ContractType
 from semantic_version import Version
 
 class DasyCompiler(CompilerAPI):
+
+    @property
+    def name(self) -> str:
+        return "dasy"
+
     def compile(self, contracts_filepaths: List[Path], base_path: Optional[Path] = None) -> List[ContractType]:
         contract_types = []
         if base_path:
